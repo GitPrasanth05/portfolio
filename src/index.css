@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 @import "tailwindcss";
 
@@ -12,7 +13,53 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.lett {
+    background: linear-gradient(90deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s ease-in-out;
+}
 
+.subtitle {
+    font-family: "Poppins", sans-serif;
+}
+.word {
+    display: inline-block;
+    transition: 0.35s ease;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.word:hover {
+    color: transparent;
+    background:linear-gradient(290deg, gold, silver,white,cyan);
+    transform: scale(1.35) translateY(-8px);
+    text-shadow:
+            0 0 6px black,
+            0 0 12px #ffcc33,
+            0 0 22px #ffdd55,
+            0 0 40px black;
+}
+
+@keyframes wave {
+    0%   { transform: scale(1.35) translateY(-8px) rotate(0deg); }
+    25%  { transform: scale(1.40) translateY(-12px) rotate(3deg); }
+    50%  { transform: scale(1.45) translateY(-10px) rotate(-3deg); }
+    75%  { transform: scale(1.40) translateY(-14px) rotate(2deg); }
+    100% { transform: scale(1.35) translateY(-8px) rotate(0deg); }
+}
+
+.word:hover {
+    animation: wave 0.4s ease-in-out infinite;
+}
+
+
+.lett:hover {
+    background: url("/images/fire.gif") center/cover no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+}
 @theme {
     --font-georama: "Georama", sans-serif;
     --font-roboto: "Roboto Mono", monospace;
