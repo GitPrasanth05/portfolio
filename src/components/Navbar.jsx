@@ -1,18 +1,20 @@
 import React from 'react';
 import {navIcons} from "#constants";
 import dayjs from "dayjs";
+import useWindowStore from "#store/window.js";
 const data =[
-  {id:1 , name:'Portfolio'},
+  {id:1 , name:'Resume' , type:"resume"},
   {id:2 , name:'Contact'},
   {id:3, name:'Projects'},
 ]
 const Navbar = () => {
+  const {openWindow} = useWindowStore()
   return <nav>
     <img src="/images/logo.svg"/>
     <p className="font-bold"> Prasanth's Portfolio </p>
     <ul>
-      { data.map(({id,name}) => (
-          <li key={id}>
+      { data.map(({id,name ,type}) => (
+          <li key={id} onClick={() => openWindow(type)}>
             <p>{name}</p>
           </li>
       ))

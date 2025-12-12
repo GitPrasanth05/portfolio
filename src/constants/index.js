@@ -77,26 +77,56 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
+        date: "OCT 15, 2025",
         title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+            " Dr. Kalam Young Achiever Award 2025",
+        image: "/images/kalam.jpeg",
+        link: "https://www.linkedin.com/posts/prasanth-m-736652291_wyf-worldyouthfederation-youngachiever-activity-7387425211463163904-3zsd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
     },
     {
         id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+        date: "May , 2025",
+        title: "FINALIST - Top 30 -NER TECH HACKATHON 2.0!",
+        image: "/images/NER.jpeg",
+        link: "https://www.linkedin.com/posts/prasanth-m-736652291_top30-finalist-hackathon-activity-7342225612922568706-im6O?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        date: "Nov, 2025",
+        title: "Secured a place in the Top 10 - challenge by Volkswagen",
+        image: "/images/VK.jpeg",
+        link: "https://www.linkedin.com/posts/srieshwar_srieshwar-volkswagen-imobileathon-activity-7403775260078366721-IK4R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
     },
+    {
+        id: 4,
+        date: "June 20 , 2025",
+        title: " GRAND FINALE - Top 10 - CATERPILLAR TECH CHALLENGE",
+        image: "/images/cat.jpg",
+        link: "https://www.linkedin.com/posts/srieshwar_proud-moment-for-sri-eshwar-4-of-our-activity-7328014299728093184-9stb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
+    },
+    {
+        id: 5,
+        date: "May , 2025",
+        title: "1st place in project expo",
+        image: "/images/pj.jpeg",
+        link: "https://www.linkedin.com/posts/prasanth-m-736652291_projectexpo-firstplace-innovation-activity-7319707649732685824-wC35?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
+    },
+
+    {
+        id: 6,
+        date: "Jan , 2025",
+        title: "3rd place at Futurepreneur 2024",
+        image: "/images/fut.jpeg",
+        link: "https://www.linkedin.com/posts/srieshwar_srieshwar-studentachievement-congratulations-activity-7283022195344187392-mp-J?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
+    },
+    {
+        id: 7,
+        date: "Jan , 2025",
+        title: "SIH 2024! 🎯 - COLLEGE LEVEL FIRST - WAITLIST (6th position)",
+        image: "/images/sih.jpeg",
+        link: "https://www.linkedin.com/posts/dharanish-a-m-40a797295_smartearthing-iot-reactnative-ugcPost-7268624942697472000-pKnf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbAvpoBSc0kQa4d_KYcHaziCYXYwO6Fym4",
+    },
+
 ];
 
 const techStack = [

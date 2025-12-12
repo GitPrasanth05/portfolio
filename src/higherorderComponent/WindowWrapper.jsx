@@ -16,14 +16,23 @@ const WindowWrapper = (Component , windowKey) => {
             if (!el) return;
 
             if (isMaximized) {
+                // gsap.to(el, {
+                //     width: "100vw",
+                //     height: "100vh",
+                //     top: "5vh",
+                //     left: "2.5vw",
+                //     duration: 0.4,
+                //     ease: "back.out",
+                // });
                 gsap.to(el, {
-                    width: "100vw",
-                    height: "100vh",
-                    top: "5vh",
-                    left: "2.5vw",
-                    duration: 0.4,
-                    ease: "back.out",
+                    width: "90vw",
+                    height: "90vh",
+                    top: "50%",
+                    left: "50%",
+                    x: "-50%",
+                    y: "-50%",
                 });
+
             } else {
                 gsap.to(el, {
                     width: "auto",
