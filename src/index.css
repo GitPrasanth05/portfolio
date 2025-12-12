@@ -60,6 +60,19 @@ body {
     color: transparent;
     text-decoration: underline;
 }
+.jett {
+    background: url("/images/fire5.gif") center/cover no-repeat ;
+    font-style: revert-layer;
+    font-family: "Poppins", sans-serif;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+}
+.jett:hover {
+    background: url("/images/fire6.gif") center/cover no-repeat;
+    -webkit-background-clip: text;
+    color: "transparent";
+}
 @theme {
     --font-georama: "Georama", sans-serif;
     --font-roboto: "Roboto Mono", monospace;

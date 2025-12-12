@@ -336,7 +336,7 @@ const Welcome = () => {
             <h1 ref={subtitleRef} className="subtitle text-5xl sm:text-6xl md:text-7xl font-bold">
                 {renderWords("Hey, I'm Prasanth!", "")}
             </h1>
-            <h1 className={`text-7xl mt-3  lett font-georama underline `}>This is my </h1>
+            <h1 className={`text-7xl mt-3  jett font-georama underline `}>This is my </h1>
             <h2 ref={titleRef} className="mt-7">
                 {renderText("PORTFOLIO", "text-9xl italic font-georama")}
             </h2>
