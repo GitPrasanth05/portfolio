@@ -158,21 +158,64 @@ body {
         }
     }
 
+    /*#window-controls {*/
+    /*    @apply flex gap-2;*/
+
+    /*    .close {*/
+    /*        @apply size-4 rounded-full bg-[#ff6157] cursor-pointer;*/
+    /*    }*/
+
+    /*    .minimize {*/
+    /*        @apply size-4 rounded-full bg-[#ffc030];*/
+    /*    }*/
+
+    /*    .maximize {*/
+    /*        @apply size-4 rounded-full bg-[#2acb42];*/
+    /*    }*/
+    /*}*/
+
+
+
     #window-controls {
         @apply flex gap-2;
 
         .close {
-            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+            @apply size-4 rounded-full bg-[#ff6157] cursor-pointer relative flex items-center justify-center;
+        }
+        .close::after {
+            content: "×";
+            @apply text-[10px] font-bold text-black opacity-0;
+            transition: opacity 0.15s ease-in-out;
+        }
+        .close:hover::after {
+            @apply opacity-100;
         }
 
         .minimize {
-            @apply size-3.5 rounded-full bg-[#ffc030];
+            @apply size-4 rounded-full bg-[#ffc030] cursor-pointer relative flex items-center justify-center;
+        }
+        .minimize::after {
+            content: "–";
+            @apply text-[14px] font-bold text-black opacity-0;
+            transition: opacity 0.15s ease-in-out;
+        }
+        .minimize:hover::after {
+            @apply opacity-100;
         }
 
         .maximize {
-            @apply size-3.5 rounded-full bg-[#2acb42];
+            @apply size-4 rounded-full bg-[#2acb42] cursor-pointer relative flex items-center justify-center;
+        }
+        .maximize::after {
+            content: "⤢";
+            @apply text-[12px] font-bold text-black opacity-0;
+            transition: opacity 0.15s ease-in-out;
+        }
+        .maximize:hover::after {
+            @apply opacity-100;
         }
     }
+
 
     #window-header {
         @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
