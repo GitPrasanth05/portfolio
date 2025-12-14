@@ -210,13 +210,13 @@ body {
             @apply size-4 rounded-full bg-[#2acb42] cursor-pointer relative flex items-center justify-center;
         }
         .maximize:hover{
-            @apply size-6
+            @apply size-4.25
         }
         .minimize:hover{
-            @apply size-6
+            @apply size-4.25
         }
         .close:hover{
-            @apply size-6
+            @apply size-4.25
         }
         .maximize::after {
             content: "⤢";
@@ -520,4 +520,11 @@ body {
 
 .hov:hover{
     cursor: pointer !important;
+}
+.mail{
+    @apply ml-2
+}
+.mail:hover
+{
+    @apply ml-2 text-blue-600 underline
 }

@@ -17,11 +17,15 @@ if(item.fileType === "pdf") return openWindow("resume");
         if (item.fileType === "txt")
             return openWindow("txtfile", item);
 
+
+        if (item.fileType === "img")
+            return openWindow("imgfile", item);
     }
+
     const {activeLocation ,setActiveLocation} = useLocationStore();
     const renderT = (items)=> items.map((item)=>(
         <li key={item.id} onClick={()=>setActiveLocation(item)} className={clsx(item.id=== activeLocation.id ? "active" : "not-active")}>
-            <img src={item.icon} alt={item.name} className="w-4 hov"  />
+            <img src={item.icon} alt={item.name} title={item.name} className="w-4 hov"  />
             <p className="text-sm font-medium ">{item.name}</p>
         </li>
     ))
