@@ -5,11 +5,22 @@ const WindowControls = ({target}) => {
     const {closeWindow , maximizeWindow} = useWindowStore()
     return (
         <div id="window-controls">
-            <div className="close" onClick={()=>closeWindow(target)}/>
-            <div className="minimize" onClick={()=>closeWindow(target)}/>
-            <div className="maximize" onClick={() => maximizeWindow(target)}/>
+            <div className="close" title="close" onClick={()=>closeWindow(target)}/>
+            <div className="minimize" title="minimize" onClick={()=>closeWindow(target)}/>
+            <div className="maximize" title="maximize" onClick={() => {
+                if (target === "resume") {
+                    window.open("/files/resume.pdf", "_blank", "noopener,noreferrer");
+                    return;
+                }
+                maximizeWindow(target);
+            }} />
 
         </div>
     )
 }
+
+//onClick
+// if (target != "resume") maximizeWindow(target)
+//             if(target === "resume") return}}
+
 export default WindowControls
