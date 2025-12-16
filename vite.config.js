@@ -14,6 +14,8 @@ export default defineConfig({
       '#store'     : resolve(dirname(fileURLToPath(import.meta.url)), 'src/store'),
       '#higherorderComponent'       : resolve(dirname(fileURLToPath(import.meta.url)), 'src/higherorderComponent'),
       '#windows'   : resolve(dirname(fileURLToPath(import.meta.url)), 'src/windows'),
+      '#background': resolve(dirname(fileURLToPath(import.meta.url)), 'src/background'),
+      '#utils':resolve(dirname(fileURLToPath(import.meta.url)),'src/utils')
     }
   }
 })
