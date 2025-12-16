@@ -14,7 +14,7 @@ const Contact = () => {
             <h2>CONTACT ME</h2>
         </div>
         <div className="p-5 space-y-5">
-            <img src={"/images/adrian.jpg"} alt={"prasanth"} className={"w-20 rounded-full"}/>
+            <img src={"/images/prasanth.jpg"} alt={"prasanth"} className={"w-20 rounded-full"}/>
             <h3>Let's Connect</h3>
             <div className="text-left space-y-2">
 
