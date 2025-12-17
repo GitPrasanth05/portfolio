@@ -68,7 +68,7 @@ const dockApps = [
   },
   {
     id: "archive",
-    name: "Archive", // was "Trash"
+    name: "Archive",
     icon: "trash.png",
     canOpen: true,
   },
@@ -213,17 +213,17 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "",
+    text: "Instagram",
+    icon: "/icons/instagram.svg",
+    bg: "#FE1Da3",
+    link: "https://www.instagram.com/_x_prasanth_x?igsh=amo0anlvNGxyNDhj",
   },
   {
     id: 3,
     text: "Leetcode",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "",
+    icon: "/icons/code.svg",
+    bg: "#FFA116",
+    link: "https://leetcode.com/u/prasanth09102005/",
   },
   {
     id: 4,
@@ -307,7 +307,6 @@ const gallery = [
     id: 11,
     img: "/images/gal11.jpg",
   },
-  
 ];
 
 export {
@@ -489,6 +488,7 @@ const WORK_LOCATION = {
   ],
 };
 
+
 const ABOUT_LOCATION = {
   id: 2,
   type: "about",
@@ -557,7 +557,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-    
     },
   ],
 };

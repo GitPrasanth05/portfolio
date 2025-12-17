@@ -48,13 +48,11 @@ body {
   animation: wave 0.4s ease-in-out infinite;
   color: transparent;
   background: linear-gradient(
-    290deg,
-    #881348,
-    rebeccapurple,
-    white,
-    silver,
-    darkblue,
-    silver
+    32,
+    #b967ff,
+    rgb(255 255 255),
+    rgb(193, 133, 159),
+    rgb(53, 149, 202)
   );
   transform: scale(1.35) translateY(-8px);
   text-shadow: 0 0 6px black, 0 0 12px #ffcc33, 0 0 22px #ffdd55, 0 0 40px black;
@@ -589,4 +587,14 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 6px;
+}
+.hid {
+  display: none;
+}
+.prasanth {
+  position: relative;
+  top: 560;
+  right: 20;
+  height: 300px;
+  width: 300px;
 }
